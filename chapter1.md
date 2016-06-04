@@ -5,6 +5,7 @@ Just click on the animachine icon in the top-left corner of the browser. If ther
 
 ### pick DOM nodes
 Click on anything in the browser window while animachine is open and the DOM Picker will show up over the DOM node. Click to the add button in the middle and it will set up a new Track with a css selector pointing to the picked DOM node.
+######Dom Picker
 
 ### animate
 When a Track is selected the transform handler will appear over its first belonging DOM node. Foe every transformation you make, animachine will create new Params and Keys at the given time. You can add, remove, and edit keys on the timeline just like in any other animation editor.
