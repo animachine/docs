@@ -7,18 +7,21 @@ In animachine you can refer to DOM nodes with css selectors. The DOM Picker make
 ## Usage
 
 ### Picking
-![](dom-picker-picking.gif)
+![](gifs/dom-picker-picking.gif)
+
  - Click on any DOM Node
  - Click the plus (+) button in the middle of the DOM Picker
  It will create a new Track with a css selector for the picked DOM Node
 
 ### Navigating
-![](dom-picker-navigating.gif)
+![](gifs/dom-picker-navigating.gif)
+
  Use the arrow icons to navigate on the DOM tree.
  - Up - select parent
  - Down - select child
  - Left/Right - select siblings
 
 ### Tricks
-![](dom-picker-commandclick.gif)
+![](gifs/dom-picker-commandclick.gif)
+
  If the DOM node you click has a parent that already belongs to a Track, animachine will select that track. It's usually the expected behavior but if you to pick the first DOM node just hold command/ctrl down while you clicking.
