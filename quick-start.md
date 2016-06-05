@@ -30,4 +30,5 @@ Open the menu (the circle button on the top of the timeline) and select save. Yo
  - Include the saved am.js into your project (you can use it eather in the common js, amd, or global export way)
  - Apply it to some DOM nodes. Ie. ```myProject.myTimeline(domNode)```
  - Then reload the page and hit the animachine button. It will reload all the projects it finds in your app.
+
 > ######[Load Project](load-project.md)

@@ -1,6 +1,6 @@
 # DOM Picker
 
-In animachine you can refer to DOM nodes with css selectors. The DOM Picker makes is easier to pick DOM nodes automatic css selector generator and graphic navigator for the DOM tree.
+In animachine you can refer to DOM nodes with css selectors. The DOM Picker makes is easier to pick DOM nodes with automatic css selector generator and graphic navigator for the DOM tree.
 
 ###[Try out here!](demo.animachine.org/#/Picker)
 
@@ -11,6 +11,7 @@ In animachine you can refer to DOM nodes with css selectors. The DOM Picker make
 
  - Click on any DOM Node
  - Click the plus (+) button in the middle of the DOM Picker
+
  It will create a new Track with a css selector for the picked DOM Node
 
 ### Navigating
@@ -24,4 +25,4 @@ In animachine you can refer to DOM nodes with css selectors. The DOM Picker make
 ### Tricks
 ![](gifs/dom-picker-commandclick.gif)
 
- If the DOM node you click has a parent that already belongs to a Track, animachine will select that track. It's usually the expected behavior but if you to pick the first DOM node just hold command/ctrl down while you clicking.
+ If the DOM node you click has a parent that already belongs to a Track, animachine will select that Track. It's usually the expected behavior but if you want to pick the first DOM node under the mouse just hold command/ctrl down while you clicking.
