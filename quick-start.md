@@ -23,9 +23,11 @@ Click between two key on the timeline and a simple ease editor will appear to ed
 ![](gifs/quick-start/qs-save.gif)
 
 Open the menu (the circle button on the top of the timeline) and select save. You can download the source am.js or just copy to clipboard.
+> ######[Save Project](save-project.md)
 
 
 ### reload
  - Include the saved am.js into your project (you can use it eather in the common js, amd, or global export way)
  - Apply it to some DOM nodes. Ie. ```myProject.myTimeline(domNode)```
  - Then reload the page and hit the animachine button. It will reload all the projects it finds in your app.
+> ######[Load Project](load-project.md)
