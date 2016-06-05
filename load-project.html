@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>quick go trough · GitBook</title>
+        <title>Load Project · GitBook</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="dom-picker.html" />
     
-    
-    <link rel="prev" href="./" />
+    <link rel="prev" href="save-project.html" />
     
 
     </head>
@@ -102,9 +100,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="chapter1.html">
+        <li class="chapter " data-level="1.2" data-path="quick-start.html">
             
-                <a href="chapter1.html">
+                <a href="quick-start.html">
             
                     
                     quick go trough
@@ -121,6 +119,32 @@
             
                     
                     DOM Picker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="save-project.html">
+            
+                <a href="save-project.html">
+            
+                    
+                    Save Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="load-project.html">
+            
+                <a href="load-project.html">
+            
+                    
+                    Load Project
             
                 </a>
             
@@ -158,7 +182,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >quick go trough</a>
+        <a href="." >Load Project</a>
     </h1>
 </div>
 
@@ -173,23 +197,28 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="quick-go-trough">quick go trough</h1>
-<h3 id="open-the-extension">open the extension</h3>
-<p>Just click on the animachine icon in the top-left corner of the browser. If there is no project already loaded on the page it will set up an new empty one.</p>
-<h3 id="pick-dom-nodes">pick DOM nodes</h3>
-<p>Click on anything in the browser window while animachine is open and the DOM Picker will show up over the DOM node. Click to the add button in the middle and it will set up a new Track with a css selector pointing to the picked DOM node.</p>
-<h3 id="animate">animate</h3>
-<p>When a Track is selected the transform handler will appear over its first belonging DOM node. Foe every transformation you make, animachine will create new Params and Keys at the given time. You can add, remove, and edit keys on the timeline just like in any other animation editor.</p>
-<h3 id="ease">ease</h3>
-<p>Click between two key on the timeline and a simple ease editor will appear to edit the ease.</p>
-<h3 id="save">save</h3>
-<p>Open the menu (the circle button on the top of the timeline) and select save. You can download the source am.js or just copy to clipboard.</p>
-<h3 id="reload">reload</h3>
-<ul>
-<li>Include the saved am.js into your project (you can use it eather in the common js, amd, or global export way)</li>
-<li>Apply it to some DOM nodes. Ie. <code>myProject.myTimeline(domNode)</code></li>
-<li>Then reload the page and hit the animachine button. It will reload all the projects it finds in your app.</li>
-</ul>
+                                <h1 id="load-project">Load Project</h1>
+<p>The project file is an UMD module so you can import it in any kind of js app.</p>
+<blockquote>
+<p>The following example is using CommonJS with ES5 syntax but for example you could load the project file with a script tag and get the project as a global js object.</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myProject = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./myProject.am.js&apos;</span>)
+<span class="hljs-keyword">var</span> node = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;anim-root&apos;</span>)
+<span class="hljs-keyword">var</span> timeline = myProject.timelineName(node)
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> One Project can contain many Timelines</p>
+</blockquote>
+<p>The created timeline is a <a href="https://greensock.com/timelinemax" _target="blank">GSAP TimelineMax</a> instance. Check out its <a href="https://greensock.com/docs/#/HTML5/GSAP/TimelineMax/" _target="blank">API</a> to see how you can controll it.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">//example</span>
+timeline.pause()
+timeline.resume()
+timeline.seek(<span class="hljs-number">1.5</span>)
+timeline.reverse()
+</code></pre>
+<blockquote>
+<h6 id="save-project"><a href="save-project.html">Save Project</a></h6>
+</blockquote>
 
                                 
                                 </section>
@@ -217,14 +246,10 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                <a href="save-project.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Save Project">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="dom-picker.html" class="navigation navigation-next " aria-label="Next page: DOM Picker">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -233,7 +258,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"quick go trough","level":"1.2","depth":1,"next":{"title":"DOM Picker","level":"1.3","depth":1,"path":"dom-picker.md","ref":"dom-picker.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["edit-link"],"pluginsConfig":{"edit-link":{"base":"https://github.com/USER/REPO/edit/BRANCH/path/to/book","label":"Edit This Page"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1.md","mtime":"2016-05-29T09:01:02.000Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2016-06-04T17:58:52.862Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Load Project","level":"1.5","depth":1,"previous":{"title":"Save Project","level":"1.4","depth":1,"path":"save-project.md","ref":"save-project.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["edit-link"],"pluginsConfig":{"edit-link":{"base":"https://github.com/animachine/docs/edit/master/","label":"Edit This Page"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"load-project.md","mtime":"2016-06-05T14:09:15.000Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2016-06-05T14:12:46.047Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

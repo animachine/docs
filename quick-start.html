@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>Introduction · GitBook</title>
+        <title>quick go trough · GitBook</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="quick-start.html" />
+    <link rel="next" href="dom-picker.html" />
     
+    
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -87,7 +89,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -100,7 +102,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="quick-start.html">
+        <li class="chapter active" data-level="1.2" data-path="quick-start.html">
             
                 <a href="quick-start.html">
             
@@ -182,7 +184,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Introduction</a>
+        <a href="." >quick go trough</a>
     </h1>
 </div>
 
@@ -197,10 +199,30 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="animachine-docs">Animachine Docs</h1>
-<p>Hi,</p>
-<p>The docs is under development.
-Check out the <a href="quick-start.html">quick go trough</a> to get started.</p>
+                                <h1 id="quick-go-trough">quick go trough</h1>
+<h3 id="open-the-extension">open the extension</h3>
+<p><img src="gifs/quick-start/qs-open.gif" alt=""></p>
+<p>Just click on the animachine icon in the top-left corner of the browser. If there is no project already loaded on the page it will set up an new empty one.</p>
+<h3 id="pick-dom-nodes">pick DOM nodes</h3>
+<p><img src="gifs/quick-start/qs-pick.gif" alt=""></p>
+<p>Click on anything in the browser window while animachine is open and the DOM Picker will show up over the DOM node. Click to the add button in the middle and it will set up a new Track with a css selector pointing to the picked DOM node.</p>
+<blockquote>
+<h6 id="dom-picker"><a href="dom-picker.html">DOM Picker</a></h6>
+</blockquote>
+<h3 id="animate">animate</h3>
+<p><img src="gifs/quick-start/qs-animate.gif" alt=""></p>
+<p>When a Track is selected the transform handler will appear over its first belonging DOM node. Foe every transformation you make, animachine will create new Params and Keys at the given time. You can add, remove, and edit keys on the timeline just like in any other animation editor.</p>
+<h3 id="ease">ease</h3>
+<p>Click between two key on the timeline and a simple ease editor will appear to edit the ease.</p>
+<h3 id="save">save</h3>
+<p><img src="gifs/quick-start/qs-save.gif" alt=""></p>
+<p>Open the menu (the circle button on the top of the timeline) and select save. You can download the source am.js or just copy to clipboard.</p>
+<h3 id="reload">reload</h3>
+<ul>
+<li>Include the saved am.js into your project (you can use it eather in the common js, amd, or global export way)</li>
+<li>Apply it to some DOM nodes. Ie. <code>myProject.myTimeline(domNode)</code></li>
+<li>Then reload the page and hit the animachine button. It will reload all the projects it finds in your app.</li>
+</ul>
 
                                 
                                 </section>
@@ -228,8 +250,12 @@ Check out the <a href="quick-start.html">quick go trough</a> to get started.</p>
 
             
                 
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="quick-start.html" class="navigation navigation-next navigation-unique" aria-label="Next page: quick go trough">
+                
+                <a href="dom-picker.html" class="navigation navigation-next " aria-label="Next page: DOM Picker">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -240,7 +266,7 @@ Check out the <a href="quick-start.html">quick go trough</a> to get started.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"quick go trough","level":"1.2","depth":1,"path":"quick-start.md","ref":"quick-start.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["edit-link"],"pluginsConfig":{"edit-link":{"base":"https://github.com/animachine/docs/edit/master/","label":"Edit This Page"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2016-06-05T13:57:57.000Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2016-06-05T14:12:46.047Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"quick go trough","level":"1.2","depth":1,"next":{"title":"DOM Picker","level":"1.3","depth":1,"path":"dom-picker.md","ref":"dom-picker.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["edit-link"],"pluginsConfig":{"edit-link":{"base":"https://github.com/animachine/docs/edit/master/","label":"Edit This Page"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"quick-start.md","mtime":"2016-06-04T21:32:44.000Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2016-06-05T14:12:46.047Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
